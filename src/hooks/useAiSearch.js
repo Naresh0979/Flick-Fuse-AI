@@ -22,7 +22,7 @@ const useAiSearch = () => {
       searchText +
       ". only give me names of 5 movies, in a comma seprated way like : movie1,movie2,movie3";
 
-    const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
     const result = await model.generateContent(promptQuery);
     const res = await result.response;
 
