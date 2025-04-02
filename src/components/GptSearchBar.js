@@ -53,7 +53,7 @@ const GptSearchBar = () => {
       ". in a comma seprated way like : genres1,genres2,genres3";
 
     try {
-      const model = genAI.getGenerativeModel({ model: "gemini-pro" });
+      const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
       const result = await model.generateContent(promptQuery);
       const res = await result.response;
       const data = res?.candidates?.[0]?.content?.parts?.[0]?.text;
